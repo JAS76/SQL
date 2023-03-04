@@ -1,0 +1,12 @@
+Check out my store database. I created a store database and displayed the database ordered by price.
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, sold INTEGER);
+INSERT INTO clothing VALUES(1, "Tops", 20, 9.99, 2);
+INSERT INTO clothing VALUES(2,"Matching Set", 50, 24.98, 6);
+INSERT INTO clothing VALUES(3, "Bottoms", 22, 30.00, 5);
+INSERT INTO clothing VALUES(4, "Dresses", 30, 15.75, 2);
+INSERT INTO clothing VALUES(5, "Jumpsuits", 44, 32.50, 20);
+
+SELECT * FROM clothing WHERE price > 9.00 ORDER BY price;
+
+SELECT COUNT(*)
