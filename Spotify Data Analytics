@@ -18,7 +18,7 @@ tempo decimal(6,3) NOT NULL, duration_ms integer NOT NULL, time_signature intege
 
 SELECT artist_name, track_name, AVG(popularity), AVG(danceability), AVG(energy)
 FROM BIT_DB.spotifyData
-GROUP BY artist_name, track_name
+GROUP BY artist_name, track_name;
 
 # 2. I determined who the Top 10 artists by popularity
 
